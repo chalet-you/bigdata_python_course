@@ -7,6 +7,7 @@ import re
 
 # 正则中的内容如何单独提取出来呢？
 # 单独获取到正则中的具体内容可以给分组其名字  eg:(?P<name>pattern)，命名捕获，将匹配的子字符串捕获到一个组名称或编号名称中。
+# (?P<分组名字>正则)   可以单独从正则匹配的内容中进一步提取内容
 
 s = """
 <div class='jay'><span id='1'>张三</span></div>
@@ -21,6 +22,6 @@ obj = re.compile(r"<div class='(.*?)'><span id='(?P<id>\d+)'>(?P<name>.*?)</span
 
 it = obj.finditer(s)
 for i in it:
-    print(i.group("id"))
-    print(i.group("name"))
+    print(i.group("id"))     # 等同于 i.group(2)
+    print(i.group("name"))   # 等同于 i.group(3)
 

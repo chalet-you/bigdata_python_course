@@ -23,7 +23,7 @@ import re
 # s = re.match(r"\d+", "我的手机号是：10086，我老婆的手机号是15800376002")
 # print(s.group())
 
-# compile() 可以将一个长长的正则进行预加载，方便后面的使用
+# compile() 可以将一个长长的正则进行预加载，方便后面的使用，compile()返回的是Pattern对象
 obj = re.compile(r"\d+")
 
 it = obj.finditer("我的手机号是：10086，我老婆的手机号是15800376002")
