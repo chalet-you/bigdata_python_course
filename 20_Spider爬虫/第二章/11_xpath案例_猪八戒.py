@@ -11,7 +11,7 @@ url = "https://www.zbj.com/fw/?k=saas"
 resp = requests.get(url)
 lis = []
 
-tree = etree.HTML(resp.text)
+tree = etree.HTML(resp.text) # 用于从字符串中解析HTML文档，接受一个包含HTML数据的字符串，返回一个`Element`对象，表示文档的根元素
 divs_list = tree.xpath('//*[@id="__layout"]/div/div[3]/div[1]/div[4]/div/div[2]/div/div[2]/div')
 for div in divs_list:
     price = div.xpath('./div/div[3]/div[1]/span/text()')[0].strip('¥')
