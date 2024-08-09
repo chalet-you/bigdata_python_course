@@ -5,7 +5,7 @@
 # @Project : bigdata_python_course
 
 from lxml import etree
-tree = etree.parse("./b.html")
+tree = etree.parse("./b.html")  # etree.parse(参数) 用于从文件或文件对象中解析XML或HTML文档。接受一个文件路径或文件对象作为参数。返回一个`ElementTree`对象，该对象表示整个文档树，可以用于进一步操作和查询
 # result = tree.xpath('/html')
 
 # result = tree.xpath("/html/body/ul/li/a/text()")
