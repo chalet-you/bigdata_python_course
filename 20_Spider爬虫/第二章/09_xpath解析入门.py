@@ -50,7 +50,7 @@ xml="""
 </book>
 """
 
-tree = etree.XML(xml)
+tree = etree.XML(xml)     # etree.XML(字符串)   用途从字符串中解析XML文档，接受一个包含XML数据的字符串，返回一个`Element`对象表示文档的根元素  
 # result = tree.xpath("/book/name")    # /表示层级关系。第一个/是根节点
 # result = tree.xpath("/book/name")
 # result = tree.xpath("/book/name/text()")         # text() 拿文本
