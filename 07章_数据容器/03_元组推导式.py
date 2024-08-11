@@ -5,6 +5,7 @@ import random
 
 
 randomnumber = (random.randint(10, 100) for i in range(10))
+print(randomnumber)  # 元组推导式产生的生成器对象
 
 # for element in randomnumber:
 #     print(element)
