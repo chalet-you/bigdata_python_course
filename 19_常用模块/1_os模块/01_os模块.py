@@ -7,7 +7,7 @@
 # os模块主要用于与操作系统进行交互，包括文件和目录操作、环境变量操作等。常用功能包括：
 # 1. 文件和目录操作
 # 2. 路径操作
-# 3. 环境变量擦偶哦
+# 3. 环境变量操作
 # 4. 进程操作
 import os
 import sys
@@ -23,7 +23,6 @@ if os.path.exists("D:/Users/Chalet.you/PycharmProjects/python_learn/13_os模块/
     os.rename("D:/Users/Chalet.you/PycharmProjects/python_learn/13_os模块/test1/test2/test3/",
               "D:/Users/Chalet.you/PycharmProjects/python_learn/13_os模块/test1/test2/test3_bak/")
 
-
 # print(os.listdir("D:/Users/Chalet.you/PycharmProjects/python_learn/"))
 
 # os.system("dir")
@@ -32,8 +31,8 @@ if os.path.exists("D:/Users/Chalet.you/PycharmProjects/python_learn/13_os模块/
 #     print(os.path.getsize("D:/Users/Chalet.you/PycharmProjects/python_learn/13_os模块/01_os_base.py"))
 
 # print(os.path.isdir("D:/Users/Chalet.you")) # 判断某个路径是否为目录
-# print(os.environ)
-print("="*20)
+# print(os.environ) # 获取系统的环境变量
+print("=" * 20)
 # print(sys.path)
 
 # directory, filename= os.path.split("D:/Users/Chalet.you/PycharmProjects/python_learn/13_os模块/01_os_base.py")
